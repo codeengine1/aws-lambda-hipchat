@@ -35,4 +35,4 @@ when testing your function you can use a message like this:
 }
 ```
 
-<img src="https://davemaple.github.io/assets/images/SendHipChatNotification.png" width="1000" height="575" alt="SendHipChatNotification.png" />
+<img src="https://davemaple.github.io/assets/images/SendHipChatNotification.png" width="750" height="431" alt="SendHipChatNotification.png" />

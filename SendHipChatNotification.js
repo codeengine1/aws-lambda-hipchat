@@ -4,12 +4,33 @@ var HipChatClient = require('hipchat-client');
 var hipchat = new HipChatClient(config.apiAuthToken);
 
 exports.handler = (function(event, context) {
-
-	hipchat.api.rooms.message({
+	
+	// validate event
+	if (!event.message) {
+		throw 'message is required!';
+	}
+	
+	// creation message and options
+	var msg = {
 		room_id : config.roomId,
 		from : config.from,
-		message : 'Test message'
-	}, function(err, res) {
+		message : event.message
+	};
+	
+	if (event.message_format) {
+		msg.message_format = event.message_format;
+	}
+	
+	if (event.notify) {
+		msg.notify = true;
+	}
+	
+	if (event.color) {
+		msg.color = event.color;
+	}
+	
+	// send message
+	hipchat.api.rooms.message(msg, function(err, res) {
 		if (err) {
 			throw err;
 		}

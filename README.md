@@ -3,6 +3,8 @@
 A simple Lambda function for pushing notifications to a hipchat room.
 
 ```
+git clone git@github.com:davemaple/aws-lambda-hipchat.git
+cd aws-lambda-hipchat
 npm install hipchat-client
 ```
  

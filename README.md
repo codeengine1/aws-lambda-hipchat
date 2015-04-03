@@ -14,7 +14,7 @@ create a config.js file:
 <pre>
 var config = {};
 
-config.apiAuthToken = 'a5c701eab4a0eacfec50f6e8a89964';
+config.apiAuthToken = 'XXXXXXXXX';
 config.roomId = 'Development';
 config.from = 'AWS Lambda';
 

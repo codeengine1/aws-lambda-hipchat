@@ -8,7 +8,7 @@ npm install hipchat-client
  
 create a config.js file:
 
-```
+```javascript
 var config = {};
 
 config.apiAuthToken = 'XXXXXXXXX';

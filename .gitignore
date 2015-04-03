@@ -1,0 +1,6 @@
+/.project
+/.jshintrc
+/.settings
+/node_modules/*
+/.tern-project
+/config.js

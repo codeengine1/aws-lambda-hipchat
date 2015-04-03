@@ -18,8 +18,7 @@ config.from = 'AWS Lambda';
 module.exports = config;
 ```
 
-create a zip for lambda
-
+create a zip for lambda using the following command:
 ```
 zip -r SendHipChatNotification.zip SendHipChatNotification.js config.js node_modules
 ```

@@ -22,7 +22,7 @@ exports.handler = (function(event, context) {
 	}
 	
 	if (event.notify) {
-		msg.notify = true;
+		msg.notify = event.notify;
 	}
 	
 	if (event.color) {

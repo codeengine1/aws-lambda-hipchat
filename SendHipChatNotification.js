@@ -36,8 +36,7 @@ exports.handler = (function(event, context) {
 		}
 
 		console.log(res);
-	});
-	
-	context.done(null, "Message Sent.");
 
+	  context.done(null, "Message Sent.");
+	});
 });
